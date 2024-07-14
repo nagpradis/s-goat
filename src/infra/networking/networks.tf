@@ -2,6 +2,7 @@ resource "google_compute_firewall" "default" {
   name    = "test-firewall"
   network = google_compute_network.default.name
   source_ranges = ["0.0.0.0/0"]
+  password = "test123"
 
   allow {
     protocol = "icmp"
